@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Hind+Madurai|Raleway');
-
 body {
     background-color: #f2f2f2;
     font-family: "Hind Madurai";
     font-weight: 300;
     font-size: 16px;
     color: #555;
-    
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-    
     margin-top: 70px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Raleway";
     font-weight: 300;
     color: #333;
@@ -31,7 +33,9 @@ p {
 a {
     color: #f85c37;
 }
-a:hover, a:focus {
+
+a:hover,
+a:focus {
     color: #7b7b7b;
     text-decoration: none;
     outline: 0;
@@ -51,17 +55,15 @@ hr {
     font-size: 14px;
     padding-top: 15px;
     padding-bottom: 15px;
-    
 }
-
 
 .navbar-inverse {
     background: #2d2d2d;
     border-color: #2d2d2d;
 }
 
-.navbar-inverse .navbar-nav > .active > a {
-    background-color: #FE2E64;
+.navbar-inverse .navbar-nav>.active>a {
+    background-color: #ff7878;
 }
 
 .navbar-inverse .navbar-brand {
@@ -70,7 +72,6 @@ hr {
     font-size: 22px;
     letter-spacing: 1px;
 }
-
 
 #headerwrap {
     background: url(../img/header.jpg) no-repeat center top;
@@ -81,14 +82,11 @@ hr {
     background-position: center center;
     min-height: 500px;
     width: 100%;
-    
-    
     background-size: 100%;
-    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-     background-size: cover;
+    background-size: cover;
 }
 
 #headerwrap h1 {
@@ -97,7 +95,6 @@ hr {
     font-size: 70px;
     font-weight: 700;
     letter-spacing: 3px;
-    
 }
 
 #headerwrap h2 {
@@ -110,7 +107,8 @@ hr {
 .w {
     padding-top: 35px;
 }
-.w h4{
+
+.w h4 {
     font-size: 30px;
 }
 
@@ -123,23 +121,22 @@ hr {
 
 #dg h4 {
     font-size: 40px;
-   
 }
 
 .tilt {
     -webkit-transition: all 0.5s ease;
-     -moz-transition: aimll 0.5s ease;
-         -o-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-            transition: all 0.5s ease;
+    -moz-transition: aimll 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .tilt:hover {
     -webkit-transform: rotate(-10deg);
-       -moz-transform: rotate(-10deg);
-         -o-transform: rotate(-10deg);
-        -ms-transform: rotate(-10deg);
-            transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
 }
 
 .wb {
@@ -149,5 +146,46 @@ hr {
 
 .wb h4 {
     font-size: 35px;
-    
+}
+
+#lg {
+    background: #ebebeb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#lg h4 {
+    font-size: 45px;
+}
+
+#r {
+    background: #ff7878;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#r h4 {
+    color: white;
+    font-size: 45px;
+}
+
+#r p {
+    color: white;
+}
+
+#f {
+    background: #2d2d2d;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#f i {
+    color: #bdbdbd;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#f i:hover {
+    color: #ff7878;
 }
