@@ -1,256 +1,96 @@
-/*----------------------------------------------------
- 3.	Header Part
-------------------------------------------------------*/
-header {
-	position:relative;
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai|Raleway');
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Hind Madurai";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+    margin-top: 70px;
 }
-.banner {
-	overflow:hidden;
-	margin:0 auto !important;
-	background:#CACACA;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
 }
-.bannerText {
-	position:absolute;
-	left:0;
-	right:0;
-	top:35%;
-	text-align:center;
-	padding:30px 0 30px;
-	max-width:960px;
-	border:1px solid #fff;
-	background: rgba(0, 0, 0, 0.3);
- filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2000000, endColorstr=#b2000000);
-	zoom: 1;
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
 }
-.bannerText h1 {
-	text-transform:uppercase;
+
+.centered {
+    text-align: center;
 }
-.bannerText h2 {
-	font-size:34px;
-	text-transform:none;
+
+a {
+    color: #f85c37;
 }
-/*------------------------------------
-	3.1 Slide show background control
---------------------------------------*/ 
-.cb-slideshow {
-	background:#1b1f2b;
+a:hover, a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
 }
-.cb-slideshow li {
-	opacity:0.5;
-	filter:alpha(opacity=50); /* For IE8 and earlier */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
-/*---------------------------------------------------------------------------------
- 4. Background slider CSS style
--------------------------------------------------------------------------------*/
-.ri-grid {
-	margin:0px auto;
-	position: relative;
-	height: auto;
+
+.navbar {
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
 }
-.ri-grid ul {
-	list-style: none;
-	display: block;
-	width: 100%;
-	margin: 0;
-	padding: 0;
+
+
+.navbar-inverse {
+    background: #2d2d2d;
+    border-color: #2d2d2d;
 }
-.ri-grid ul:before, .ri-grid ul:after {
-	content: '';
-	display: table;
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #FE2E64;
 }
-.ri-grid ul:after {
-	clear: both;
+
+.navbar-inverse .navbar-brand {
+    color: #999;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
-.ri-grid ul {
-	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+
+
+#headerwrap {
+    background: url(../img/header.jpg) no-repeat center top;
+    margin-top: -10px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    
+    
+    background-size: 100%;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
 }
-.ri-grid ul li {
-	-webkit-perspective: 400px;
-	-moz-perspective: 400px;
-	-o-perspective: 400px;
-	-ms-perspective: 400px;
-	perspective: 400px;
-	margin: 0;
-	padding: 0;
-	float: left;
-	position: relative;
-	display: block;
-	overflow: hidden;
-	background: #000;
+
+#headerwrap h1 {
+    
 }
-.ri-grid ul li a {
-	display: block;
-	outline: none;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	background-size: 100% 100%;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: #333;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-}
-/* Grid wrapper sizes */
-.ri-grid-size-1 {
-	width: 55%;
-}
-.ri-grid-size-2 {
-	width: 100%;
-}
-.ri-grid-size-3 {
-	width: 100%;
-	margin-top: 0px;
-}
-/* Shadow style */
-.ri-shadow:after, .ri-shadow:before {
-	content: "";
-	position: absolute;
-	z-index: -2;
-	bottom: 15px;
-	left: 10px;
-	width: 50%;
-	height: 20%;
-	max-width: 300px;
-	max-height: 100px;
-	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
-	-webkit-transform: rotate(-3deg);
-	-moz-transform: rotate(-3deg);
-	-ms-transform: rotate(-3deg);
-	-o-transform: rotate(-3deg);
-	transform: rotate(-3deg);
-}
-.ri-shadow:after {
-	right: 10px;
-	left: auto;
-	-webkit-transform: rotate(3deg);
-	-moz-transform: rotate(3deg);
-	-ms-transform: rotate(3deg);
-	-o-transform: rotate(3deg);
-	transform: rotate(3deg);
-}
-.ri-grid-loading:after, .ri-grid-loading:before {
-	display: none;
-}
-.ri-loading-image {
-	display: none;
-}
-.ri-grid-loading .ri-loading-image {
-	position: relative;
-	width: 30px;
-	height: 30px;
-	left: 50%;
-	margin: 100px 0 0 -15px;
-	display: block;
-}
-/*----------------------------------------------------
- 5.	Menu Style
-------------------------------------------------------*/
-.isStuck {
-	left:0px;
-	width:100%;
-}
-.menu {
-	margin-top:0px;
-	position: static;
-	left:0px;
-	right:0px;
-}
-.navwrapper .container {
-	padding:0;
-	width:auto;
-}
-.navbar-header {
-	display:none;
-}
-.nav > li > a {
-	display:inline-block;
-}
-.navbar-nav > li {
-	float: none;
-	display: inline;
-}
-.navbar-nav {
-	margin: 0 auto;
-	text-align: center;
-	float: none;
-}
-.navbar-toggle {
-	margin-top:14px;
-}
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-	margin-top:0px;
-	position: relative;
-	z-index: 15;
-	background:#262b37;
-}
-.navbar-wrapper .container {
-	padding:0px;
-}
-.navbar-collapse {
-	padding:0;
-}
-.navbar-collapse.in {
-	max-height:100%;
-}
-.navbar.navbar-inverse.navbar-static-top {
-	margin:0px auto;
-	background:#262b37;
-	color:#c3c8d6;
-	border:none;
-	font-family: 'Open Sans', sans-serif;
-	font-size:14px;
-	text-transform:uppercase;
-}
-.navbar.navbar-inverse.navbar-static-top a {
-	color:#c3c8d6;
-	padding:22px 25px;
-	line-height:18px;
-	text-align:center;
-}
-.navbar.navbar-inverse.navbar-static-top a:hover {
-	color:#fff;
-}
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus {
-	background:#1b1f29;
-	color:#c3c8d6;
-}
-.navbar-inverse .navbar-nav>.active>a:hover {
-	background:#1b1f29;
-	color:#fff;
-}
-.hideClass {
-	display:none;
-}
-.carousel {
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-	z-index: 10;
-}
-/* Declare heights because of positioning of img element */
-.carousel .item {
-	height: 600px;
-	background-color: #0A64A4;
-}
-.carousel-inner > .item > img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	min-width: 100%;
